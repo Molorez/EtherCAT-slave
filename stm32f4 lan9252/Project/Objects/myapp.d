@@ -1,0 +1,16 @@
+.\objects\myapp.o: User\myapp.c
+.\objects\myapp.o: .\EtherCAT\ecat_def.h
+.\objects\myapp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\myapp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\myapp.o: .\EtherCAT\applInterface.h
+.\objects\myapp.o: .\EtherCAT\esc.h
+.\objects\myapp.o: .\EtherCAT\ecatslv.h
+.\objects\myapp.o: .\Hardware\el9800hw.h
+.\objects\myapp.o: .\EtherCAT\objdef.h
+.\objects\myapp.o: .\EtherCAT\sdoserv.h
+.\objects\myapp.o: .\EtherCAT\ecatcoe.h
+.\objects\myapp.o: .\EtherCAT\mailbox.h
+.\objects\myapp.o: .\EtherCAT\ecatappl.h
+.\objects\myapp.o: User\myapp.h
+.\objects\myapp.o: .\EtherCAT\ecatappl.h
+.\objects\myapp.o: .\EtherCAT\myappObjects.h

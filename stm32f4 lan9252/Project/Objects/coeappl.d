@@ -1,0 +1,15 @@
+.\objects\coeappl.o: EtherCAT\coeappl.c
+.\objects\coeappl.o: EtherCAT\ecat_def.h
+.\objects\coeappl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\coeappl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\coeappl.o: EtherCAT\ecatslv.h
+.\objects\coeappl.o: .\Hardware\el9800hw.h
+.\objects\coeappl.o: .\EtherCAT\esc.h
+.\objects\coeappl.o: EtherCAT\coeappl.h
+.\objects\coeappl.o: EtherCAT\objdef.h
+.\objects\coeappl.o: EtherCAT\sdoserv.h
+.\objects\coeappl.o: EtherCAT\ecatcoe.h
+.\objects\coeappl.o: EtherCAT\mailbox.h
+.\objects\coeappl.o: .\User\myapp.h
+.\objects\coeappl.o: .\EtherCAT\ecatappl.h
+.\objects\coeappl.o: .\EtherCAT\myappObjects.h

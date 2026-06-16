@@ -1,0 +1,286 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2, 1, LIC=GMZI6-DG608-QDIKD-8S31E-TP514-ISZSZ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\12867\Desktop\test\Project\Template.uvprojx
+Project File Date:  03/22/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling coeappl.c...
+compiling includes.c...
+compiling myapp.c...
+User\myapp.c(266): warning:  #1215-D: #warning directive: "Implement input (Slave -> Master) mapping"
+      #warning "Implement input (Slave -> Master) mapping"
+User\myapp.c(282): warning:  #1215-D: #warning directive: "Implement output (Master -> Slave) mapping"
+      #warning "Implement output (Master -> Slave) mapping"
+User\myapp.c(296): warning:  #1215-D: #warning directive: "Implement the slave application"
+      #warning "Implement the slave application"
+User\myapp.c(331): warning:  #951-D: return type of function "main" must be "int"
+  void main(void)
+User\myapp.c: 4 warnings, 0 errors
+compiling ecatcoe.c...
+compiling ecatappl.c...
+EtherCAT\ecatappl.c(143): warning:  #1215-D: #warning directive: "Define the timer ticks per ms"
+  #warning "Define the timer ticks per ms"
+EtherCAT\ecatappl.c(250): warning:  #223-D: function "HW_GetTimer" declared implicitly
+              StartTimerCnt = (
+INT32) HW_GetTimer();
+EtherCAT\ecatappl.c(256): warning:  #223-D: function "HW_GetTimer" declared implicitly
+                  
+INT32 CurTimerCnt = (
+INT32)HW_GetTimer();
+EtherCAT\ecatappl.c(725): warning:  #223-D: function "DISABLE_ESC_INT" declared implicitly
+              DISABLE_ESC_INT();
+EtherCAT\ecatappl.c(733): warning:  #223-D: function "ENABLE_ESC_INT" declared implicitly
+              ENABLE_ESC_INT();
+EtherCAT\ecatappl.c: 5 warnings, 0 errors
+compiling el9800hw.c...
+Hardware\el9800hw.c(169): error:  #20: identifier "DISABLE_AL_EVENT_INT" is undefined
+      DISABLE_AL_EVENT_INT;
+Hardware\el9800hw.c(171): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+      
+ELECT_SPI;
+Hardware\el9800hw.c(174): error:  #20: identifier "SPI1_IF" is undefined
+      SPI1_IF=0;
+Hardware\el9800hw.c(179): error:  #20: identifier "SPI1_BUF" is undefined
+      SPI1_BUF = (UINT8) (0x0000 >> 5);
+Hardware\el9800hw.c(182): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c(186): error:  #65: expected a ";"
+      EscALEvent.Byte[0] = SPI1_BUF;
+Hardware\el9800hw.c(196): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c(199): error:  #101: "EscALEvent" has already been declared in the current scope
+      EscALEvent.Byte[1] = SPI1_BUF;
+Hardware\el9800hw.c(199): error:  #65: expected a ";"
+      EscALEvent.Byte[1] = SPI1_BUF;
+Hardware\el9800hw.c(210): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c(212): error:  #101: "EscMbxReadEcatCtrl" has already been declared in the current scope
+      EscMbxReadEcatCtrl = SPI1_BUF;
+Hardware\el9800hw.c(218): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+ESELECT_SPI
+Hardware\el9800hw.c(220): error:  #65: expected a ";"
+      ENABLE_AL_EVENT_INT;
+Hardware\el9800hw.c(168): warning:  #177-D: variable "EscMbxReadEcatCtrl"  was declared but never referenced
+      UINT8            EscMbxReadEcatCtrl;
+Hardware\el9800hw.c(234): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+ESELECT_SPI
+Hardware\el9800hw.c(234): error:  #109: expression preceding parentheses of apparent call must have (pointer-to-) function type
+      DESELECT_SPI
+Hardware\el9800hw.c(239): error:  #20: identifier "SPI1_IF" is undefined
+      SPI1_IF=0;
+Hardware\el9800hw.c(246): error:  #20: identifier "SPI1_BUF" is undefined
+      SPI1_BUF = 0;
+Hardware\el9800hw.c(248): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c(251): error:  #65: expected a ";"
+      EscALEvent.Byte[0] = SPI1_BUF;
+Hardware\el9800hw.c(259): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c(262): error:  #101: "EscALEvent" has already been declared in the current scope
+      EscALEvent.Byte[1] = SPI1_BUF;
+Hardware\el9800hw.c(262): error:  #65: expected a ";"
+      EscALEvent.Byte[1] = SPI1_BUF;
+Hardware\el9800hw.c(269): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+ESELECT_SPI
+Hardware\el9800hw.c(270): error:  #65: expected a ";"
+  }
+Hardware\el9800hw.c(286): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+      
+ELECT_SPI;
+Hardware\el9800hw.c(289): error:  #20: identifier "SPI1_IF" is undefined
+      SPI1_IF=0;
+Hardware\el9800hw.c(290): error:  #20: identifier "SPI1_BUF" is undefined
+      dummy = SPI1_BUF;
+Hardware\el9800hw.c(296): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c(299): error:  #65: expected a ";"
+      EscALEvent.Byte[0] = SPI1_BUF;
+Hardware\el9800hw.c(307): error:  #20: identifier "WAIT_SPI_IF" is undefined
+      WAIT_SPI_IF
+Hardware\el9800hw.c: 1 warning, 30 errors
+compiling ecatslv.c...
+EtherCAT\ecatslv.c(237): warning:  #223-D: function "DISABLE_ESC_INT" declared implicitly
+      DISABLE_ESC_INT();
+EtherCAT\ecatslv.c(240): warning:  #223-D: function "ENABLE_ESC_INT" declared implicitly
+      ENABLE_ESC_INT();
+EtherCAT\ecatslv.c(256): warning:  #223-D: function "DISABLE_ESC_INT" declared implicitly
+      DISABLE_ESC_INT();
+EtherCAT\ecatslv.c(259): warning:  #223-D: function "ENABLE_ESC_INT" declared implicitly
+      ENABLE_ESC_INT();
+EtherCAT\ecatslv.c(2069): warning:  #223-D: function "DISABLE_ESC_INT" declared implicitly
+      DISABLE_ESC_INT();
+EtherCAT\ecatslv.c(2139): warning:  #223-D: function "ENABLE_ESC_INT" declared implicitly
+      ENABLE_ESC_INT();
+EtherCAT\ecatslv.c: 6 warnings, 0 errors
+compiling SPI1.c...
+Hardware\SPI1.c(186): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+      
+SLOW();
+Hardware\SPI1.c(201): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+SHIGH();
+Hardware\SPI1.c(279): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+      
+SLOW();
+Hardware\SPI1.c(292): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+SHIGH();
+Hardware\SPI1.c(391): error:  #20: identifier "PRAM_RW_ABORT_MASK" is undefined
+      param32_1.Val = (unsigned long int)PRAM_RW_ABORT_MASK;                                                 
+Hardware\SPI1.c(393): error:  #20: identifier "PRAM_READ_CMD_REG" is undefined
+      SPIWriteDWord (PRAM_READ_CMD_REG, param32_1.Val);
+Hardware\SPI1.c(402): error:  #20: identifier "PRAM_RW_BUSY_8B" is undefined
+      }while((param32_1.v[3] & PRAM_RW_BUSY_8B));
+Hardware\SPI1.c(409): error:  #20: identifier "PRAM_READ_ADDR_LEN_REG" is undefined
+      SPIWriteDWord (PRAM_READ_ADDR_LEN_REG, param32_1.Val);
+Hardware\SPI1.c(415): error:  #20: identifier "PRAM_RW_BUSY_32B" is undefined
+      param32_1.Val = PRAM_RW_BUSY_32B; /*TODO:replace with #defines*/
+Hardware\SPI1.c(428): error:  #20: identifier "IS_PRAM_SPACE_AVBL_MASK" is undefined
+      }while(!(param32_1.v[0] & IS_PRAM_SPACE_AVBL_MASK));
+Hardware\SPI1.c(430): error:  #20: identifier "PRAM_SPACE_AVBL_COUNT_MASK" is undefined
+      nReadSpaceAvblCount = param32_1.v[1] & PRAM_SPACE_AVBL_COUNT_MASK;
+Hardware\SPI1.c(437): error:  #20: identifier "PRAM_READ_FIFO_REG" is undefined
+      param32_1.Val = SPIReadDWord (PRAM_READ_FIFO_REG);
+Hardware\SPI1.c(446): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+      
+SLOW();
+Hardware\SPI1.c(468): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+SHIGH();
+Hardware\SPI1.c(488): error:  #20: identifier "PRAM_RW_ABORT_MASK" is undefined
+      param32_1.Val = PRAM_RW_ABORT_MASK;                                                
+Hardware\SPI1.c(490): error:  #20: identifier "PRAM_WRITE_CMD_REG" is undefined
+      SPIWriteDWord (PRAM_WRITE_CMD_REG, param32_1.Val);
+Hardware\SPI1.c(498): error:  #20: identifier "PRAM_RW_BUSY_8B" is undefined
+      }while((param32_1.v[3] & PRAM_RW_BUSY_8B));
+Hardware\SPI1.c(505): error:  #20: identifier "PRAM_WRITE_ADDR_LEN_REG" is undefined
+      SPIWriteDWord (PRAM_WRITE_ADDR_LEN_REG, param32_1.Val);
+Hardware\SPI1.c(510): error:  #20: identifier "PRAM_RW_BUSY_32B" is undefined
+      param32_1.Val = PRAM_RW_BUSY_32B; /*TODO:replace with #defines*/
+Hardware\SPI1.c(520): error:  #20: identifier "IS_PRAM_SPACE_AVBL_MASK" is undefined
+      }while(!(param32_1.v[0] & IS_PRAM_SPACE_AVBL_MASK));
+Hardware\SPI1.c(523): error:  #20: identifier "PRAM_SPACE_AVBL_COUNT_MASK" is undefined
+      nWrtSpcAvlCount = param32_1.v[1] & PRAM_SPACE_AVBL_COUNT_MASK;
+Hardware\SPI1.c(534): error:  #20: identifier "PRAM_WRITE_FIFO_REG" is undefined
+      SPIWriteDWord (PRAM_WRITE_FIFO_REG,param32_1.Val);
+Hardware\SPI1.c(541): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+      
+SLOW();
+Hardware\SPI1.c(560): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+      
+SHIGH();
+Hardware\SPI1.c(626): error:  #136: struct "<unnamed>"  has no field "BSRRH"
+  	
+SLOW();
+Hardware\SPI1.c(641): error:  #136: struct "<unnamed>"  has no field "BSRRL"
+  		
+SHIGH();
+Hardware\SPI1.c: 0 warnings, 26 errors
+compiling stm32f4xx_it.c...
+compiling EXIT.c...
+compiling mailbox.c...
+compiling ADC1.c...
+compiling system_stm32f4xx.c...
+compiling Timer.c...
+compiling sys.c...
+compiling objdef.c...
+EtherCAT\objdef.c(729): warning:  #111-D: statement is unreachable
+          break;
+EtherCAT\objdef.c(890): warning:  #767-D: conversion from pointer to smaller integer
+              if((((
+INT16)pVarPtr) & 0x1) == 0x1)
+EtherCAT\objdef.c(897): warning:  #767-D: conversion from pointer to smaller integer
+                  pVarPtr = (
+INT16 
+BXMEM *)(((
+EM_ADDR)pVarPtr)& ~(MEM_ADDR)0x1);
+EtherCAT\objdef.c: 3 warnings, 0 errors
+compiling sdoserv.c...
+compiling misc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_cec.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_cryp_tdes.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_cryp_aes.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_dfsdm.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_dsi.c...
+compiling stm32f4xx_flash_ramfunc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_fmpi2c.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_hash.c...
+compiling stm32f4xx_hash_md5.c...
+compiling stm32f4xx_hash_sha1.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_lptim.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_qspi.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_ltdc.c...
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_rcc.c...
+assembling startup_stm32f40_41xxx.s...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_sai.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_spdifrx.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_wwdg.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_tim.c...
+".\Objects\Template.axf" - 56 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.\objects\objdef.o: EtherCAT\objdef.c
+.\objects\objdef.o: EtherCAT\ecat_def.h
+.\objects\objdef.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\objdef.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\objdef.o: EtherCAT\ecatslv.h
+.\objects\objdef.o: .\Hardware\el9800hw.h
+.\objects\objdef.o: .\EtherCAT\esc.h
+.\objects\objdef.o: EtherCAT\coeappl.h
+.\objects\objdef.o: EtherCAT\objdef.h
+.\objects\objdef.o: EtherCAT\sdoserv.h
+.\objects\objdef.o: EtherCAT\ecatcoe.h
+.\objects\objdef.o: EtherCAT\mailbox.h
+.\objects\objdef.o: EtherCAT\objdef.h

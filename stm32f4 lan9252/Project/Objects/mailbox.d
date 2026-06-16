@@ -1,0 +1,10 @@
+.\objects\mailbox.o: EtherCAT\mailbox.c
+.\objects\mailbox.o: EtherCAT\ecat_def.h
+.\objects\mailbox.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\mailbox.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mailbox.o: EtherCAT\ecatslv.h
+.\objects\mailbox.o: .\Hardware\el9800hw.h
+.\objects\mailbox.o: .\EtherCAT\esc.h
+.\objects\mailbox.o: EtherCAT\mailbox.h
+.\objects\mailbox.o: EtherCAT\ecatcoe.h
+.\objects\mailbox.o: EtherCAT\mailbox.h
